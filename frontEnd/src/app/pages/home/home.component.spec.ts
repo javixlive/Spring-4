@@ -8,7 +8,7 @@ import { of } from 'rxjs';
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
-  let service: MovieService
+  let service: MovieService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -35,5 +35,27 @@ describe('HomeComponent', () => {
     expect(spy).toHaveBeenCalledBefore(subsSpy)
     expect(subsSpy).toHaveBeenCalled();
   }))
+
+  it("Should load more movies", () => {
+    const mock = [{
+      adult:             false,
+      backdrop_path:     "string",
+      genre_ids:         [1,2],
+      id:                1,
+      original_language: "en",
+      original_title:    "string",
+      overview:          "string",
+      popularity:        5,
+      poster_path:       "string",
+      release_date:      "string",
+      title:             "string",
+      video:             false,
+      vote_average:      1,
+      vote_count:        1
+    }]
+    component.loadMovies()
+
+    expect(component.movies).toEqual([],mock)
+  })
 
 });

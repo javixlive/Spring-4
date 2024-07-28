@@ -32,7 +32,7 @@ export class AuthComponent {
 
   onSubmit(form: NgForm) {
       if(!form.valid) return;
-
+      console.log(form)
       const email = form.value.email;
       const password = form.value.password;
 
@@ -48,7 +48,6 @@ export class AuthComponent {
 
       authObs.subscribe(
           resData => {
-            console.log(resData);
             this.isLoading = false;
             this.router.navigate(['/home']);
           },
