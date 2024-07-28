@@ -1,0 +1,10 @@
+#Front-end
+frontEnd/.env
+frontEnd/node_modules
+frontEnd/coverage
+frontEnd/.angular
+frontEnd/src/app/environment/environment.ts
+
+#Back-end
+backEnd/BollywoodHubAPI/bin
+backEnd/BollywoodHubAPI/obj

@@ -1,0 +1,10 @@
+@BollywoodHubAPI_HostAddress = InsertURL
+
+GET {{BollywoodHubAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{BollywoodHubAPI_HostAddress}}/weatherforecast
+
+###
