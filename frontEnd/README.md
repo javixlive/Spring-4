@@ -23,6 +23,8 @@ Learn and apply the use of Angular, TypeScript and Testing
 ![3](public/Home_ZoomOut.png)
 ![4](public/Movie_details.png)
 ![5](public/Search.png)
+![6](public/Karma_test.png)
+![7](public/Karma_test_coverage.png)
 
 ## Instructions
 
@@ -40,9 +42,7 @@ Asides from that must of the stuff implemented was from the Liderly crash course
 
 ## Known Issues
 
-Jasmine/Karma can't detect any of the test modules, therefor all test and test coverage don't work at all. Will work on migrating it in these upcoming days to fix it :<
-
-Some very specific cards can break the styling.
+Some stuff has issues with the new API 
 
 ## Retrospective
 
